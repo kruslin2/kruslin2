@@ -1,17 +1,13 @@
 # variables declarations
-transparent = True
-transparency = 1
+transparent = False
+transparency = 0
 is_cube = True
 glass = False
 translucent = False
 
-colliders = [
-	[
-		(-0.5, -0.5, -0.5),
-		( 0.5,  0.5,  0.5)
-	]
-]
-# vertices coordinates
+colliders = []
+
+# vertices positions
 vertex_positions = [
 	[ 0.5,  0.5,  0.5,  0.5, -0.5,  0.5,  0.5, -0.5, -0.5,  0.5,  0.5, -0.5], # right
 	[-0.5,  0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5,  0.5, -0.5,  0.5,  0.5], # left
@@ -20,7 +16,8 @@ vertex_positions = [
 	[-0.5,  0.5,  0.5, -0.5, -0.5,  0.5,  0.5, -0.5,  0.5,  0.5,  0.5,  0.5], # front
 	[ 0.5,  0.5, -0.5,  0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5,  0.5, -0.5], # back
 ]
-# testures coordinates
+
+# texture coordinates
 tex_coords = [
 	[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0],
 	[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0],
@@ -29,6 +26,7 @@ tex_coords = [
 	[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0],
 	[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0],
 ]
+
 # shading values
 shading_values = [
 	[0.6, 0.6, 0.6, 0.6],
@@ -39,18 +37,13 @@ shading_values = [
 	[0.8, 0.8, 0.8, 0.8],
 ]
 
-assert transparent == True
-assert transparency == 1
+assert transparent == False
+assert transparency == 0
 assert is_cube == True
 assert glass == False
 assert translucent == False
 
-assert colliders == [
-	[
-		(-0.5, -0.5, -0.5),
-		( 0.5,  0.5,  0.5)
-	]
-       ]
+assert colliders == []
 
 assert vertex_positions == [
 	[ 0.5,  0.5,  0.5,  0.5, -0.5,  0.5,  0.5, -0.5, -0.5,  0.5,  0.5, -0.5], # right
@@ -70,7 +63,6 @@ assert tex_coords == [
 	[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0],
 ]
 
-
 assert shading_values == [
 	[0.6, 0.6, 0.6, 0.6],
 	[0.6, 0.6, 0.6, 0.6],
@@ -79,7 +71,3 @@ assert shading_values == [
 	[0.8, 0.8, 0.8, 0.8],
 	[0.8, 0.8, 0.8, 0.8],
 ]
-
-
-
-
